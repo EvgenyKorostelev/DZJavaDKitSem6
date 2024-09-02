@@ -10,12 +10,19 @@ import java.util.Random;
 public class MontyHallParadox {
     private static final int COUNT_SIMULATIONS = 1000;
 
-    private int winsSwitching = 0;
-    private int lossesSwitching = 0;
-    private int winsNotSwitching = 0;
-    private int lossesNotSwitching = 0;
-    private Map<Integer, String> resultsMap = new HashMap<>();
+    private int winsSwitching;
+    private int lossesSwitching;
+    private int winsNotSwitching;
+    private int lossesNotSwitching;
+    private Map<Integer, String> resultsMap;
 
+    public MontyHallParadox() {
+        this.winsSwitching = 0;
+        this.lossesSwitching = 0;
+        this.winsNotSwitching = 0;
+        this.lossesNotSwitching = 0;
+        this.resultsMap = new HashMap<>();
+    }
 
     public void runSimulation() {
         Random random = new Random();
